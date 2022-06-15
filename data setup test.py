@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Mar 23 20:45:28 2022
-# Spire Logs (~300 000 samples)
-@author: leeju
-"""
 import urllib.request
 import json
 import numpy as np
