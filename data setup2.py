@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri May 13 13:52:42 2022
-
-@author: leeju
-"""
 import json
 import copy
 import pandas as pd
@@ -30,7 +24,7 @@ name_list.append("damage_taken")
 #data_list.append(name_list)
 count_dict = {}
 for num in range(1, 683):
-    filename = "D:/문서/slay-i test/test/"
+    filename = "D:/Documents/slay-i test/test/"
     filename +=str(num)
     filename+=".json"
     print(filename)
