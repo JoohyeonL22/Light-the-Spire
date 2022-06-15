@@ -130,7 +130,7 @@ print("if you use this card, hp_gain : ", y_predict2-y_predict1)
 """
 learning_rate = 0.01
 training_steps =10000
-xy = np.loadtxt("D:/문서/Jaw Worm.csv", delimiter=',', dtype=np.float32) 
+xy = np.loadtxt("D:/Documents/Jaw Worm.csv", delimiter=',', dtype=np.float32) 
 
 X_DATA = xy[:, 0:-1]
 Y_DATA = xy[:, [-1]]
@@ -153,7 +153,7 @@ for i in range(training_steps):
 """
 
 """
-dataset = pd.read_csv("D:/문서/Jaw Worm.csv", names=ALL_IRONCLAD)
+dataset = pd.read_csv("D:/Documents/Jaw Worm.csv", names=ALL_IRONCLAD)
 train_dataset2 = dataset.sample(frac=0.8,random_state=0)
 test_dataset2 = dataset.drop(train_dataset2.index)
 train_labels2 = train_dataset2.pop('damage_taken')
@@ -249,7 +249,7 @@ for i in ALL_IRONCLAD2:
     ALL_IRONCLAD.append(temp2)
 
 ALL_IRONCLAD.append("damage_taken")
-dataset = pd.read_csv("D:/문서/Jaw Worm.csv", names=ALL_IRONCLAD)
+dataset = pd.read_csv("D:Documents//Jaw Worm.csv", names=ALL_IRONCLAD)
 
 y_val= dataset['damage_taken']
 x_data=dataset.drop('damage_taken', axis=1)
