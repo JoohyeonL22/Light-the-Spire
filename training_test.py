@@ -17,7 +17,7 @@ from sklearn.datasets import make_regression
 ALL_IRONCLAD = ['Anger', 'Anger+1', 'Armaments', 'Armaments+1', 'Barricade', 'Barricade+1', 'Bash', 'Bash+1', 'Battle Trance', 'Battle Trance+1', 'Berserk', 'Berserk+1', 'Blood for Blood', 'Blood for Blood+1', 'Bloodletting', 'Bloodletting+1', 'Bludgeon', 'Bludgeon+1', 'Body Slam', 'Body Slam+1', 'Brutality', 'Brutality+1', 'Burning Pact', 'Burning Pact+1', 'Carnage', 'Carnage+1', 'Clash', 'Clash+1', 'Cleave', 'Cleave+1', 'Clothesline', 'Clothesline+1', 'Combust', 'Combust+1', 'Corruption', 'Corruption+1', 'Dark Embrace', 'Dark Embrace+1', 'Defend_R', 'Defend_R+1', 'Demon Form', 'Demon Form+1', 'Disarm', 'Disarm+1', 'Double Tap', 'Double Tap+1', 'Dropkick', 'Dropkick+1', 'Dual Wield', 'Dual Wield+1', 'Entrench', 'Entrench+1', 'Evolve', 'Evolve+1', 'Exhume', 'Exhume+1', 'Feed', 'Feed+1', 'Feel No Pain', 'Feel No Pain+1', 'Fiend Fire', 'Fiend Fire+1', 'Fire Breathing', 'Fire Breathing+1', 'Flame Barrier', 'Flame Barrier+1', 'Flex', 'Flex+1', 'Ghostly Armor', 'Ghostly Armor+1', 'Havoc', 'Havoc+1', 'Headbutt', 'Headbutt+1', 'Heavy Blade', 'Heavy Blade+1', 'Hemokinesis', 'Hemokinesis+1', 'Immolate', 'Immolate+1', 'Impervious', 'Impervious+1', 'Infernal Blade', 'Infernal Blade+1', 'Inflame', 'Inflame+1', 'Intimidate', 'Intimidate+1', 'Iron Wave', 'Iron Wave+1', 'Juggernaut', 'Juggernaut+1', 'Limit Break', 'Limit Break+1', 'Metallicize', 'Metallicize+1', 'Offering', 'Offering+1', 'Perfected Strike', 'Perfected Strike+1', 'Pommel Strike', 'Pommel Strike+1', 'Power Through', 'Power Through+1', 'Pummel', 'Pummel+1', 'Rage', 'Rage+1', 'Rampage', 'Rampage+1', 'Reaper', 'Reaper+1', 'Reckless Charge', 'Reckless Charge+1', 'Rupture', 'Rupture+1', 'Searing Blow', 'Searing Blow+1', 'Second Wind', 'Second Wind+1', 'Seeing Red', 'Seeing Red+1', 'Sentinel', 'Sentinel+1', 'Sever Soul', 'Sever Soul+1', 'Shockwave', 'Shockwave+1', 'Shrug It Off', 'Shrug It Off+1', 'Spot Weakness', 'Spot Weakness+1', 'Strike_R', 'Strike_R+1', 'Sword Boomerang', 'Sword Boomerang+1', 'Thunderclap', 'Thunderclap+1', 'True Grit', 'True Grit+1', 'Twin Strike', 'Twin Strike+1', 'Uppercut', 'Uppercut+1', 'Warcry', 'Warcry+1', 'Whirlwind', 'Whirlwind+1', 'Wild Strike', 'Wild Strike+1', 'Apotheosis', 'Apotheosis+1', 'AscendersBane', 'Bandage Up', 'Bandage Up+1', 'Bite', 'Bite+1', 'Blind', 'Blind+1', 'Chrysalis', 'Chrysalis+1', 'Dark Shackles', 'Dark Shackles+1', 'Dramatic Entrance', 'Dramatic Entrance+1', 'Deep Breath', 'Deep Breath+1', 'Discovery', 'Discovery+1', 'Enlightenment', 'Enlightenment+1', 'Flash of Steel', 'Flash of Steel+1', 'Finesse', 'Finesse+1', 'Forethought', 'Forethought+1', 'Good Instincts', 'Good Instincts+1', 'HandOfGreed', 'HandOfGreed+1', 'Impatience', 'Impatience+1', 'Jack Of All Trades', 'Jack Of All Trades+1', 'J.A.X.', 'J.A.X.+1', 'Madness', 'Madness+1', 'Magnetism', 'Magnetism+1', 'Master of Strategy', 'Master of Strategy+1', 'Mayhem', 'Mayhem+1', 'Metamorphosis', 'Metamorphosis+1', 'Mind Blast', 'Mind Blast+1', 'Panacea', 'Panacea+1', 'Panache', 'Panache+1', 'PanicButton', 'PanicButton+1', 'Purity', 'Purity+1', 'RitualDagger', 'RitualDagger+1', 'Sadistic Nature', 'Sadistic Nature+1', 'Secret Technique', 'Secret Technique+1', 'Secret Weapon', 'Secret Weapon+1', 'Swift Strike', 'Swift Strike+1', 'The Bomb', 'The Bomb+1', 'Thinking Ahead', 'Thinking Ahead+1', 'ThroughViolence', 'ThroughViolence+1', 'Transmutation', 'Transmutation+1', 'Trip', 'Trip+1', 'Violence', 'Violence+1', 'Clumsy', 'CurseOfTheBell', 'Decay', 'Doubt', 'Injury', 'Normality', 'Necronomicurse', 'Pain', 'Parasite', 'Pride', 'Regret', 'Shame', 'Writhe']
 ALL_IRONCLAD.append("damage_taken")
 
-dataset = pd.read_csv("D:/문서/Jaw Worm_0.csv", names=ALL_IRONCLAD)
+dataset = pd.read_csv("D:/Documents/Jaw Worm_0.csv", names=ALL_IRONCLAD)
 
 train_dataset2 = dataset.sample(frac=0.8,random_state=0)
 test_dataset2 = dataset.drop(train_dataset2.index)
@@ -32,7 +32,7 @@ train_labels = train_labels2.to_numpy()
 test_labels = test_labels2.to_numpy()
 #print(train_dataset.shape)
 
-"""
+
 EPOCHS = 500
 
 model = tf.keras.models.Sequential([
@@ -92,7 +92,7 @@ test_scores = model.evaluate(test_dataset, test_labels, verbose=2)
 print("Test loss:", test_scores[0])
 print("Test accuracy:", test_scores[1])
 model.save("D:/문서/my_model.h5")
-"""
+
 
 
 #model.save("D:/문서/my_model.h5")
