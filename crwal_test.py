@@ -39,8 +39,8 @@ for i in range(0, len(temp3)):
     df = pd.DataFrame(data=table[1:], columns=table[0])
     print(df)
     
-    #df.to_csv('D:\문서\slay-i test\crwal_result\\'+temp4[i]+".csv")
-    #df.to_csv('D:\문서\slay-i test\crwal_result\\'+temp3[i]+".csv")
+    #df.to_csv('D:\Documents\slay-i test\crwal_result\\'+temp4[i]+".csv")
+    #df.to_csv('D:\Documents\slay-i test\crwal_result\\'+temp3[i]+".csv")
 
 
 
