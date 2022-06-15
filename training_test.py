@@ -91,14 +91,14 @@ print("dropout 400, 200")
 test_scores = model.evaluate(test_dataset, test_labels, verbose=2)
 print("Test loss:", test_scores[0])
 print("Test accuracy:", test_scores[1])
-model.save("D:/문서/my_model.h5")
+model.save("D:/Documents/my_model.h5")
 
 
 
-#model.save("D:/문서/my_model.h5")
+#model.save("D:/Documents/my_model.h5")
 #model.save("my_model")
-#model = keras.models.load_model("D:/문서/resnet_model.h5")
-model = keras.models.load_model("D:/문서/my_model.h5")
+#model = keras.models.load_model("D:/Documents/resnet_model.h5")
+model = keras.models.load_model("D:/Documents/my_model.h5")
 
 test_scores = model.evaluate(test_dataset, test_labels, verbose=2)
 print("Test loss:", test_scores[0])
