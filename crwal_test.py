@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Sep  5 01:53:29 2021
-
-@author: leeju
-"""
 import requests
 from bs4 import BeautifulSoup
 from html_table_parser import parser_functions
