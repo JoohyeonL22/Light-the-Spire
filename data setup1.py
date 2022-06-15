@@ -32,7 +32,7 @@ def process_runs(data_dir, name):
     file_master_not_match_count = 0
     fight_training_examples = list()
 
-    tmp_dir = os.path.join('D:/문서/slay-i test/test')
+    tmp_dir = os.path.join('D:/Documents/slay-i test/test')
     for root, dirs, files in os.walk(data_dir):
         for fname in files:
             path = os.path.join(root, fname)
