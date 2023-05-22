@@ -22,7 +22,7 @@ There are two dense layers and two dropout layers. The input is a sequence of ca
 crawl_test.py : Crawling data from 'spirelogs.com'
 
 data setup1.py: Pre-processing and saving data from crawled data ('20190201003826_1548999484.run.json'). Example format of saved file is same as '1.json'.
-(this file is based on @@@)
+(This file is based on https://github.com/alexdriedger/SlayTheSpireFightPredictor)
 
 data setup2.py : Load pre-processed data ('1.json') and save as .csv format for training data ('Jaw Worm_0.csv').
 
