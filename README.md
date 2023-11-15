@@ -13,7 +13,7 @@ The trained model predicts  HP loss from sequence of cards on the deck. Then, it
 4. Load and inference the trained model on Java. Apply to 'Slay The Spire' java mod. (co-work with https://gitlab.com/icosa1/lightthespire)
 
 # Structure of the recommending proper cards model.
-<img width="100%" src="https://github.com/JoohyeonL22/Light-the-Spire/assets/106375416/546180e9-8ce0-4607-b3dd-2febbe1a37b6"/>
+<img width="100%" src="image1.png"/>
 Multi layered perceptron structure was used in this project.
 
 There are two dense layers and two dropout layers. The input is a sequence of card in each deck and output is a value of HP loss.
@@ -29,7 +29,7 @@ data setup2.py : Load pre-processed data ('1.json') and save as .csv format for 
 training_test.py : Load training data ('Jaw Worm_0.csv') and training. After training, the model can be saved and be loaded. HP loss for each card can be predicted by a trained model.
 
 # A screenshot of recommending proper cards
-<img width="100%" src="https://github.com/JoohyeonL22/Light-the-Spire/assets/106375416/81624f12-4f74-4cfe-b501-848664c3624d"/>
+<img width="100%" src="image2.png"/>
 
 - Green bounding box means to strongly recommend this card.
 - Yellow bounding box means to weakly recommend this card.
